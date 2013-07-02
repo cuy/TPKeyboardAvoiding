@@ -100,7 +100,7 @@
     self.contentInset = [self contentInsetForKeyboard];
     [self setContentOffset:CGPointMake(self.contentOffset.x,
                                        [self idealOffsetForView:firstResponder withSpace:[self keyboardRect].origin.y - self.bounds.origin.y])
-                  animated:YES];
+                  animated:NO];
     [self setScrollIndicatorInsets:self.contentInset];
     
     [UIView commitAnimations];
